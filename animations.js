@@ -1,6 +1,6 @@
 window.onload = function(){
 
-  let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  let svg = document.getElementById("cerealbox-box");
   let svgNS = svg.namespaceURI;
   let rect = document.createElementNS(svgNS,'rect');
   rect.setAttribute('x',0);
@@ -9,8 +9,8 @@ window.onload = function(){
   rect.setAttribute('height',5);
   rect.setAttribute('fill','#000000');
   rect.animate([
-    { transform: 'translate(0, 0)', offset: 0 },
-    { transform: 'translate(40%, 100%)',  offset: 1 }
+    { transform: 'translate(50%, 50%)', offset: 0 },
+    { transform: 'translate(60%, 100%)',  offset: 1 }
   ],
   {
     duration: 600, //milliseconds
@@ -20,9 +20,8 @@ window.onload = function(){
     fill: 'forwards' //'backwards', 'both', 'none', 'auto'
   });
   svg.appendChild(rect);
-  svg.setAttribute("id", "cereal-flakes");
-  let animationContainer = document.getElementById('animation-container');
-  animationContainer.appendChild(svg);
+  
+ 
 
 
   document.getElementById('cerealbox-animation').animate([
