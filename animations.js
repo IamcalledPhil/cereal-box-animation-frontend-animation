@@ -31,11 +31,11 @@ window.onload = function(){
       { offsetDistance: "100%",  opacity: 0}
     ],
     {
-      duration: 800, //milliseconds
-      easing: 'linear', //'linear', a bezier curve, etc.
-      iterations: Infinity, //or a number
-      direction: 'normal', //'normal', 'reverse', etc.
-      fill: 'forwards', //'backwards', 'both', 'none', 'auto'
+      duration: 700, 
+      easing: 'linear', 
+      iterations: Infinity,
+      direction: 'normal',
+      fill: 'forwards', 
       delay: flakeDelay
     });
     flakeDelay += 170;
@@ -50,11 +50,11 @@ window.onload = function(){
     { transform: 'rotate(0deg) translate(0, 0)', offset: 0 },
     { transform: 'rotate(1deg) translate(9%, 7%)',  offset: 1 }
   ], {
-    duration: 170, //milliseconds
-    easing: 'ease-in-out', //'linear', a bezier curve, etc.
-    iterations: Infinity, //or a number
-    direction: 'alternate', //'normal', 'reverse', etc.
-    fill: 'forwards' //'backwards', 'both', 'none', 'auto'
+    duration: 170,
+    easing: 'ease-in-out', 
+    iterations: Infinity, 
+    direction: 'alternate', 
+    fill: 'forwards' 
   });
 
   
